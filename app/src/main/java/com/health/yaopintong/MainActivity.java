@@ -53,8 +53,6 @@ private RadioGroup rg;
                 for(int i=0;i<rbIds.length;i++){
                     if(rbIds[i]==checkedId){
                         views[i].setVisibility(View.VISIBLE);
-
-
                     }else{
                         views[i].setVisibility(View.INVISIBLE);
                     }

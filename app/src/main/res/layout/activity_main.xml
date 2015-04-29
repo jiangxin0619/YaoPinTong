@@ -1,11 +1,97 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_main_top">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:id="@+id/top_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/top_left_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/search_heard_left" />
+
+            <ImageView
+                android:id="@+id/top_center_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/bg_main_logo" />
+
+            <ImageView
+                android:id="@+id/top_right_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:src="@drawable/btn_top_right_unpress" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/top_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_ll"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/bg_search_small" />
+
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/search_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_search_top_tab">
+        <RadioButton
+            android:id="@+id/search_btn1"
+            style="@style/searchBtn"
+            android:text="对症下药"/>
+        <RadioButton
+            android:id="@+id/search_btn2"
+            style="@style/searchBtn"
+            android:text="分类查询"/>
+        <RadioButton
+            android:id="@+id/search_btn3"
+            style="@style/searchBtn"
+            android:text="品牌专区"/>
+        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/search_view1"
+            style="@style/searchBtnView"
+            android:visibility="visible" />
+        <View
+            android:id="@+id/search_view2"
+            style="@style/searchBtnView"
+            android:visibility="invisible" />
+        <View
+            android:id="@+id/search_view3"
+            style="@style/searchBtnView"
+            android:visibility="invisible" />
+        </LinearLayout>
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

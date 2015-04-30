@@ -37,7 +37,7 @@ private RadioGroup rg;
 
         left= ((ImageView) findViewById(R.id.top_left_img));
 
-
+        //头部右按钮
         right= ((ImageView) findViewById(R.id.top_right_img));
         right.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +45,7 @@ private RadioGroup rg;
 
             }
         });
-
+        //对症下药那些RadioButton
         rg= ((RadioGroup) findViewById(R.id.search_rg));
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

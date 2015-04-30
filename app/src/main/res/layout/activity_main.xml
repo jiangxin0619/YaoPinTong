@@ -12,10 +12,10 @@
         android:background="@drawable/bg_main_top">
 
         <LinearLayout
-            android:layout_marginTop="8dp"
             android:id="@+id/top_ll"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
 
             <ImageView
                 android:id="@+id/top_left_img"
@@ -51,43 +51,52 @@
             android:src="@drawable/bg_search_small" />
 
     </RelativeLayout>
+
     <RadioGroup
         android:id="@+id/search_rg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/bg_search_top_tab">
+        android:background="@drawable/bg_search_top_tab"
+        android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/search_btn1"
             style="@style/searchBtn"
-            android:text="对症下药"/>
+            android:text="对症下药" />
+
         <RadioButton
             android:id="@+id/search_btn2"
             style="@style/searchBtn"
-            android:text="分类查询"/>
+            android:text="分类查询" />
+
         <RadioButton
             android:id="@+id/search_btn3"
             style="@style/searchBtn"
-            android:text="品牌专区"/>
-        </RadioGroup>
+            android:text="品牌专区" />
+    </RadioGroup>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <View
             android:id="@+id/search_view1"
             style="@style/searchBtnView"
             android:visibility="visible" />
+
         <View
             android:id="@+id/search_view2"
             style="@style/searchBtnView"
             android:visibility="invisible" />
+
         <View
             android:id="@+id/search_view3"
             style="@style/searchBtnView"
             android:visibility="invisible" />
-        </LinearLayout>
+    </LinearLayout>
+
     <ListView
         android:id="@+id/search_lv"
         android:layout_width="match_parent"
@@ -95,3 +104,4 @@
 
 
 </LinearLayout>
+

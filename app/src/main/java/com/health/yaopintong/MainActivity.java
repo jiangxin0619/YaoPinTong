@@ -16,7 +16,9 @@ import android.widget.RadioGroup;
 
 import com.slidingmenu.lib.SlidingMenu;
 
-
+/**
+ * 主界面
+ */
 public class MainActivity extends FragmentActivity {
 private RadioGroup rg;
     private ListView search_lv;

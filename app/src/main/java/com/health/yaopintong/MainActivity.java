@@ -18,9 +18,10 @@ import com.slidingmenu.lib.SlidingMenu;
 
 /**
  * 主界面
+ *
  */
 public class MainActivity extends FragmentActivity {
-private RadioGroup rg;
+    private RadioGroup rg;
     private ListView search_lv;
     private ImageView left,right;
 
@@ -29,7 +30,6 @@ private RadioGroup rg;
 
     public MainActivity() {
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

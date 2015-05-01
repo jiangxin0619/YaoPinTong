@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:orientation="vertical">
+    <!--10个空格！ -->
+    <TextView
+        android:id="@+id/sort_tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_child_drug"
+        android:gravity="center_vertical"
+        android:text="              感冒用药"
+        android:textSize="23sp" />
+    <com.health.yaopintong.myview.NoScrollGridView
+        android:visibility="gone"
+        android:id="@+id/sort_gv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="2"/>
+
+</LinearLayout>

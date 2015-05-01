@@ -28,26 +28,28 @@
                 android:id="@+id/top_center_img"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_weight="5"
                 android:src="@drawable/bg_main_logo" />
 
             <ImageView
                 android:id="@+id/top_right_img"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="1"
                 android:src="@drawable/btn_top_right_unpress" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/top_search"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/top_ll"
             android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
+            android:scaleType="centerInside"
             android:src="@drawable/bg_search_small" />
 
     </RelativeLayout>
@@ -97,11 +99,17 @@
             android:visibility="invisible" />
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/search_lv"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="match_parent">
 
+        <com.health.yaopintong.myview.MyViewPager
+            android:id="@+id/main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
 
 </LinearLayout>
 

@@ -4,5 +4,15 @@
     <string name="app_name">YaoPinTong</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="title_activity_near">NearActivity</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_type_grid_con">TypeGridConActivity</string>
+    <string name="type_spinner_price">价格</string>
+    <string name="type_spinner_medcare">医保</string>
+    <string name="type_spinner_basemed">基本药</string>
+    <string name="title_activity_sick">SickActivity</string>
 
 </resources>

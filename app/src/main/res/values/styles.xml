@@ -1,10 +1,11 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
     </style>
-    <style name="searchBtn" >
+
+    <style name="searchBtn">
         <item name="android:gravity">center</item>
         <item name="android:paddingBottom">10dp</item>
         <item name="android:paddingTop">10dp</item>
@@ -16,6 +17,7 @@
         <item name="android:button">@null</item>
         <item name="android:paddingLeft">0dp</item>
     </style>
+
     <style name="searchBtnView">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">3px</item>
@@ -24,5 +26,25 @@
 
     </style>
 
+    <style name="mainRadioButton">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
 
+    <style name="TabTxtv" >
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
 </resources>

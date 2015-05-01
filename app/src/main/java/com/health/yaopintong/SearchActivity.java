@@ -22,7 +22,7 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/***/
 public class SearchActivity extends FragmentActivity {
     private RadioGroup rg;
     private ImageView left, right;
